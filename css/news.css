@@ -1,0 +1,194 @@
+/*头部*/
+#header{
+	width: 100%;
+	height: 60px;
+	background: #000000;
+}
+/*底部*/
+#footer{
+	height: 480px;
+	width: 100%;
+}
+.inner{
+	position: relative;
+}
+.anli{
+	width: 100%;
+	height: 211px;
+	background: url(../images/banner1.jpg) center center;
+}
+.anli>h1{
+	margin-top: 0;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 900;
+	padding-top: 75px;
+	color: white;
+	margin-bottom: 0;
+}
+.anli>span{
+	display: block;
+	width: 48px;
+	height: 3px;
+	background: #FF6700;
+	margin-left: 48%;
+	margin-top: 8px;
+}
+.anli>p{
+	margin-top: 15px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}
+.anli>p>span>img{
+	display: inline-block;
+	margin-right: 2px;
+	margin-top: -2px;
+}
+.anli>p>span:hover{
+	cursor: pointer;
+}
+.inner{
+	width: 1170px;
+	margin: 0 auto;
+}
+.anlishow{
+	margin-top: 30px;
+	position: relative;
+	padding-bottom: 30px;
+}
+.anlishowl{
+	width: 878px;
+	border: 1px solid #f3f3f3;
+	background: white;
+	padding-bottom: 80px;
+}
+.anlishowl>.ajax{
+	margin-left: 30px;
+	width: 817px;
+	height: 221px;
+	border-bottom: 1px solid #f3f3f3;
+	position: relative;
+}
+.anlishowl>.ajax>.tupian{
+	width: 160px;
+	height: 160px;
+	float: left;
+	margin-top: 30px;
+}
+.anlishowl>.ajax>.tupian>img{
+	width: 100%;
+	height: 100%;
+}
+.anlishowl>.ajax>.word{
+	width: 638px;
+	height: 160px;
+	float: right;
+	margin-top: 30px;
+}
+.anlishowl>.ajax>.word>h1{
+	margin-top: 0;
+	font-size: 24px;
+	color: #2A333C;
+	font-weight: normal;
+}.anlishowl>.ajax>.word>h1:hover{
+	color: #FF6700;
+	cursor: pointer;
+}
+.anlishowl>.ajax>.word>h2{
+	font-size: 16px;
+	color: #76838f;
+	font-weight: normal;
+	margin-top: 30px;
+}
+.anlishowl>.ajax>.word>h3{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #a3afb7;
+	font-weight: normal;
+}
+.list_btn{
+    height: 58px;
+    width: 58px;
+    background: url(../images/lis_more_btn_bg.png) no-repeat 0 -58px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 12px;
+    left: 35%;
+}
+.anlishowr{
+	width: 265px;
+	height: 650px;
+	border: 1px solid #f3f3f3;
+	background: white;
+	position: relative;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.anlishowr>.sear{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 36px;
+	width: 223px;
+	border-radius: 20px;
+	border: 1px solid #f3f3f3;
+	padding-left: 10px;
+	margin-bottom: 9px;
+}
+.anlishowr>#btn{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background: url(../images/sear.png) no-repeat;
+}
+.anlishowr>h1{
+	margin-left: 20px;
+	font-size: 18px;
+	color: #37474F;
+}
+.anlishowr>h2{
+	width: 223px;
+	height: 10px;
+	border-bottom: 1px solid #f3f3f3;
+	margin-left: 20px;
+}
+.anlishowr>ul{
+	width: 223px;
+	height: 330px;
+	margin-left: 20px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.anlishowr>ul>li{
+	width: 223px;
+	height: 66px;
+	border: 1px solid #f3f3f3;
+	border-bottom: none;
+}
+.anlishowr>ul>li:hover p{
+	color: #FF6700;
+	cursor: pointer;
+}
+.anlishowr>ul>li>p{
+	margin-top: 15px;
+	margin-left: 15px;
+	color: #2a333c;
+	font-size: 14px;
+}
+.anlishowr>.anli1{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.anlishowr>.anli1>p{
+	color: #2A333C;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.anlishowr>.anli1>p:hover{
+	color: #FF6700;
+	cursor: pointer;
+}

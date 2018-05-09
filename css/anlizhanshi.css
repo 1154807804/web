@@ -1,0 +1,175 @@
+body{
+	background: #f9f9f9;
+}
+/*头部*/
+#header{
+	width: 100%;
+	height: 60px;
+	background: #000000;
+}
+/*底部*/
+#footer{
+	height: 480px;
+	width: 100%;
+}
+.inner{
+	width: 1170px;
+	margin: 0 auto;
+}
+.anlishow{
+	margin-top: 30px;
+	height: 920px;
+}
+.anlishowl{
+	width: 878px;
+	height: 900px;
+	float: left;
+	border: 1px solid #f3f3f3;
+	background: white;
+}
+.anlishowl>h1{
+	margin-left: 30px;
+	font-size: 30px;
+	color: #37474F;
+}
+.anlishowl>p{
+	margin-left: 30px;
+	color: #a3afc7;
+	font-size: 14px;
+}
+.anlishowl>h2{
+	width: 817px;
+	height: 25px;
+	border-bottom: 1px solid #f3f3f3;
+	margin-left: 30px;
+}
+.anlishowl>.tup{
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.anlishowl>.tup img{
+	width: 817px;
+	height: 454px;
+}
+.anlishowl>.wenzi{
+	margin-top: 65px;
+	margin-left: 30px;
+	width: 817px;
+}
+.anlishowl>.wenzi>p{
+	font-size: 16px;
+	color: black;
+}
+.anlishowr{
+	width: 265px;
+	height: 670px;
+	float: right;
+	border: 1px solid #f3f3f3;
+	background: white;
+	position: relative;
+}
+.anlishowr>.sear{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 36px;
+	width: 223px;
+	border-radius: 20px;
+	border: 1px solid #f3f3f3;
+	padding-left: 10px;
+	margin-bottom: 9px;
+}
+.anlishowr>#btn{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background: url(../images/sear.png) no-repeat;
+}
+.anlishowr>h1{
+	margin-left: 20px;
+	font-size: 18px;
+	color: #37474F;
+}
+.anlishowr>h2{
+	width: 223px;
+	height: 10px;
+	border-bottom: 1px solid #f3f3f3;
+	margin-left: 20px;
+}
+.anlishowr>ul{
+	width: 223px;
+	height: 330px;
+	margin-left: 20px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.anlishowr>ul>li{
+	width: 223px;
+	height: 66px;
+	border: 1px solid #f3f3f3;
+	border-bottom: none;
+}
+.anlishowr>ul>li:hover p{
+	color: #FF6700;
+	cursor: pointer;
+}
+.anlishowr>ul>li>p{
+	margin-top: 15px;
+	margin-left: 15px;
+	color: #2a333c;
+	font-size: 14px;
+}
+.anlishowr>.anli{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.anlishowr>.anli>p{
+	color: #2A333C;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.anlishowr>.anli>p:hover{
+	color: #FF6700;
+	cursor: pointer;
+}
+
+
+/*放大*/
+#pbOverlay, #pbImage, #pbBottom, #pbCloseBtn {
+	position: fixed;
+	z-index: 9999;
+}
+#pbOverlay {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	cursor: pointer;
+}
+#pbCloseBtn {
+	top: 0;
+	right: 0;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../images/closebutton.png) no-repeat top left;
+}
+#pbBottom {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #EEE;
+	line-height: 1.4em;
+	left: 50%;
+	bottom: 10px;
+	width: 400px;
+	margin-left: -200px; /* half the width */
+}
+#pbNav {
+	display: block;
+	width: 282px;
+	height: 70px;
+	margin: auto;
+	margin-top: 5px;
+}

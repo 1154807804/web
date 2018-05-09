@@ -1,0 +1,49 @@
+/*重置样式表  为了统一元素在不同浏览器的样式*/
+/*重置样式表reset.css   nomalize.css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+*{
+	font-size: 14px;
+   	font-family: Microsoft JhengHei,Microsoft Yahei;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0 none;
+    vertical-align: middle;
+}
+input{
+	border: 0 none;
+	outline: none; /*外边蓝色框*/
+	/*padding-bottom: 12px;*/
+}
+button{
+	outline: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial,sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    text-shadow: rgba(0,0,0,.15) 0 0 1px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #37474f;
+}
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}

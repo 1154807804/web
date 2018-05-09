@@ -1,0 +1,98 @@
+*{margin:0;padding:0;}
+li{list-style:none outside none;}
+.silder-box{
+	width: 1170px;
+	height: 460px; 
+	position:relative;
+	margin:10px auto ;
+}
+.silder li{
+	float: left;
+	width:278px;
+	height:278px;
+	position: relative;
+}
+.silder li img{
+	width:276px;
+	height:276px;
+	border: 1px solid #ebebeb;
+	position: relative;
+}
+.silder-button{
+	top:120px;
+	width:25px;
+	height:54px;
+	position:absolute;
+	cursor:pointer;
+}
+.silder-button.btl{
+	left:-50px;
+	background:url(../images/bl.png);
+}
+.silder-button.btr{
+	right:-40px;
+	background:url(../images/br.png);
+}
+.silder li .rexzhez{
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.silder li .rexzhez{ 
+	top: -100%; 
+	transition: 0.5s; 
+	color: #000; 
+	padding: 45px 20px 20px;
+}
+.silder li .rexzhez{
+	top: 50%; 
+	left: 50%; 
+	width: 0; 
+	height: 0; 
+	overflow: hidden; 
+	padding: 0;
+}
+.silder li:hover .rexzhez{
+	cursor: pointer;
+	width: 100%; 
+	top: 0; 
+	left:0; 
+	height: 100%; 
+	padding: 45px 20px 20px;
+}
+.silder li img{
+	transition: 0.5s;
+}
+.silder li .rexzhez>h1{
+	margin-top: 20px;
+	font-size: 18px;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+}
+.silder li .rexzhez>h2 ,h3{
+	font-size: 18px;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+}
+.silder li .rexzhez>h3{
+	margin-top: 10px;
+	color: #f96868;
+}
+.silder li .rexzhez>span{
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #FF6700;
+	margin-top: 5px;
+	margin-left: 44%;
+	margin-bottom: 10px;
+} 
+.silder li .rexzhez>p{
+	margin-top: 10px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}

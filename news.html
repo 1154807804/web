@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新闻资讯</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/news.css"/>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<div class="anli">
+			<h1>新闻资讯</h1>
+			<span></span>
+			<p>
+				<span title="网站首页"><img src="images/fangzi.png"/>网站首页</span>
+				<span>>新闻资讯</span>
+			</p>
+		</div>
+		<div class="anlishow">
+			<div class="inner">
+				<!--<div>-->
+				<div class="anlishowl" id="box">
+					<!--<div class="ajax"> 
+						<div class="tupian">
+							<img src="images/list_img01.jpg"/>
+						</div>
+						<div class="word">
+							<h1>展示“影像金融”的力量，全面助力银行业服务提升</h1>
+							<h2>当你在银行对公柜台办理业务时，高速扫描仪快速准确识别支票印章，会大大减少你的等待时间。高清晰度的网络摄像机记录了每一笔银行交易...</h2>
+							<h3>2016-10-30 admin 138</h3>
+						</div>
+					</div>-->
+					<div class="list_btn"></div>
+				</div>
+				
+				<!--</div>-->
+				<div class="anlishowr">
+					<input type="search" class="sear" placeholder="Search">
+					<input type="button" id="btn"/>
+					<h2></h2>
+					<h1>为您推荐</h1>
+					<ul>
+						<li>
+							<p>展示“影像金融”的力量，<br />全面助力银行业服务提升</p>
+						</li>
+						<li>
+							<p>“影像公益”深入社区送健<br />康</p>
+						</li>
+						<li>
+							<p>商业模式的变化带给分销商<br />的新活法</p>
+						</li>
+						<li>
+							<p>我司采用RFID技术为消费者<br />构筑“防火墙”</p>
+						</li>
+						<li>
+							<p style="margin-top: 25px;">数码单镜反光照相机构造</p>
+						</li>
+					</ul>
+					<h2 style="margin-top: 20px;"></h2>
+					<div class="anli1">
+						<p>所有文章</p>
+						<p>企业新闻</p>
+						<p>行业动态</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer"></div>
+	</body>
+	<script type="text/javascript">
+		$(function () {
+    		//加载头部和底部
+    		$("#header").load("header.html");
+    		$("#footer").load("footer.html");
+    		
+    		var ajax = $("#box");
+       		var start = 0;
+	       	var num = 3;
+	       	var b = 1;
+	       	function get_data(start,num){
+	           	$.get('js/listone.json',function(data){
+	               	data = eval(data);
+	               	data = data["list"];
+	               	console.log(data);
+	               	var L = data.length;
+	               	if ((start+num) > L){
+	                   	num = L - start;
+	                   	b = 0;
+	               	}
+	               	for(var i = start;i<(start+num);i++){
+	                   	var content = "";
+	                   	content = content + "<div class='ajax'>"+
+	                        "<div class='tupian'>" +
+	                        "<img src='"+data[i].coverImg+"'></div>"+
+	                        "<div class='word'>" +
+	                        "<h1>"+data[i].title+"</h1>" +
+	                        "<h2>"+data[i].creatAt+"</h2>" +
+	                        "<h3>"+data[i].describe+"</h3></div>"+
+	                        "</div>";
+	                    ajax.append(content);
+	               	}
+	           	});
+	           	return start+num;
+	       	}
+	       	start = get_data(start,num);
+	       	$(".list_btn").click(function(){
+	           	if(b == 0){
+	           		$(".list_btn").hide();
+	           	}else{
+	               	start = get_data(start,num);
+	           	}
+	       	})
+		})
+	</script>
+</html>

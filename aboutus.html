@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<link rel="stylesheet" href="css/jsmodern.min.css">
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/jsmodern.min.js"></script>
+		<title>关于我们</title>
+		<style>
+			ul li{
+				list-style: none;
+			}
+			#my-nav{
+				top:30%;
+				left:50px;
+				color:#fff;
+				width:150px;
+			}
+			#my-nav li{
+				font-size: 14px;
+				background:#fff;
+				text-align: center;
+				color:#000;
+				width:150px;
+				height:40px;
+				line-height: 40px;
+				cursor:pointer;
+				border-bottom: 1px solid gainsboro;
+			}
+			#my-nav li.active{
+				background: black;
+				color: white;
+			}
+			.container>div>h1{
+				text-align: center;
+				margin-top: 40px;
+			}
+			.container>div>h2{
+				width: 45px;
+				height: 2px;
+				background: #ff6700;
+				margin-left: 48%;
+				margin-top: 5px;
+			}
+			.container>div>p{
+				width: 750px;
+				font-size: 16px;
+				color: black;
+				margin-left: 25%;
+				margin-top: 20px;
+			}
+			.container>div>img{
+				width: 750px;
+				height: 300px;
+				position: absolute;
+				left: 25%;
+				top: 300px;
+			}
+		</style>
+		<script>
+			$(function () {
+				// 调用 jsModern 的 fullPage 组件方法
+				// 使用自定义导航按钮
+				// 进行沿 x 轴的横向滑动
+				jsModern.fullPage({
+			      	navigation: "#my-nav",
+			        background: ['#F9F9F9', '#F9F9F9', '#F9F9F9', '#F9F9F9'],
+			        axis: "x",
+      			});
+			});
+		</script>
+	</head>
+	<body>
+		<section class="container">
+	    	<div>
+	    		<h1>企业简介</h1>
+	    		<h2></h2>
+	    		<p>
+	    			公司自2003年创业以来，始终以创造世界一流产品为奋斗目标，积极推动事业向多元化和全球化发展。目前，我们在全球以光学为核心的影像系统产品、办公产品以及工业产品等领域发挥着巨大的作用，通过在美洲、欧洲、大洋洲、亚洲和日本地区建立区域性总部，展开全球化多种经营战略。
+	    		</p>
+	    		<p>
+	    			公司自2003年创业以来，始终以创造世界一流产品为奋斗目标，积极推动事业向多元化和全球化发展。目前，我们在全球以光学为核心的影像系统产品、办公产品以及工业产品等领域发挥着巨大的作用，通过在美洲、欧洲、大洋洲、亚洲和日本地区建立区域性总部，展开全球化多种经营战略。
+	    		</p>
+	    		<img title="企业简介" src="images/1477803234.jpg"/>
+	    	</div>
+	    	<div>
+	    		<h1>企业文化</h1>
+	    		<h2></h2>
+	    		<p>企业精神：自信、自律，自立、自强客户：为客户提供高质量和最大价值的专业化产品和服务，以真诚和实力赢得客户的理解、尊重和支持。</p>
+	    		<p>员工：信任员工的努力和奉献，承认员工的成就并提供相应回报，为员工创造良好的工作环境和发展前景。</p>
+	    		<p>市场：为客户降低采购成本和风险，为客户投资提供切实保障。</p>
+	    		<p>发展：追求永续发展的目标，并把它建立在客户满意的基础上。</p>
+	    		<p>
+	    			团队精神：<br />
+					在不同空间下为学习、工作、娱乐提供标准定制、功能组合、空间利用的设计解决方案，使其成为可靠的具有持续竞争优势的数码产品供应商。<br />
+					明确的目标+良好的心态+正确的方法=完美的结果<br />
+					是事业，不是工作；（目标）<br />
+					是激情，不是热情；（心态）<br />
+					是动力，不是蛮力；（方法）<br />
+					是追求，不是索取。（结果）
+	    		</p>
+	    		<p>
+	    			团队目标：<br />
+					以客户为导向，是我们一切行动的准则； 明确的目标+良好的心态+正确的方法=完美的结果<br />
+					客户的口碑，才是企业的金杯；<br />
+					为客户创造价值，为股东创造利润，<br />
+					为员工创造机会，为社会创造效益。
+	    		</p>
+	    	</div>
+	    	<div>
+	    		<h1>企业愿景</h1>
+	    		<h2></h2>
+	    		<img style="top: 100px;" title="企业愿景" src="images/banner3.jpg"/>
+	    		<p style="margin-top: 350px;">
+	    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品质铸就品牌，品牌造就辉煌。我们致力于打造全球最专业数码应用品牌的一流企业；积极推进数码相机技术的应用和发展。通过不断创新产品和优质服务来强化公司企业的发展，通过科学管理来优化团队的组合，不断激发员工的潜能。“数码人”坚持和谐共赢的理念，愿与海内我们立足于成熟产品的生产研发和更新技术，不断向更高更远的目标努力。
+	    			<br /><br />
+	    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们知道努力实现这一目标就如攀登高峰，路途徒峭险俊。今天我们准备在第一时间登上这一高科技顶峰，就必须用务实的态度披荆斩刺，不断解决在前进道路上所遇到的难题。所幸的是我们有一支团队协作的精英队伍，我们坚信：在困难和压力面前，团结就是力量！
+	    		</p>
+	    	</div>
+	    	<div>
+	    		<h1>联系我们</h1>
+	    		<h2></h2>
+	    		<img title="联系我们" style="width: 450px;height:360px;left:45%;top: 120px;" src="images/pinpai8.jpg"/>
+	    		<p style="margin-top: 50px;">地    址:长沙市开福区芙蓉中路2段  </p><br />
+	    		<p>公司总机：0731—88888888 </p><br />
+	    		<p>OEM 电话：0731—88888888  </p><br />
+	    		<p>升级服务：0731—88888888 </p><br />
+	    		<p>网    址:   shumazhaom@163.com</p><br />
+	    		<p>技术支持：support@shuma.com</p><br />
+	    	</div>
+    	</section>
+    	<ul id="my-nav">
+    		<li>>&nbsp;&nbsp;&nbsp;企业简介</li>
+    		<li>>&nbsp;&nbsp;&nbsp;企业文化</li>
+    		<li>>&nbsp;&nbsp;&nbsp;企业愿景</li>
+    		<li>>&nbsp;&nbsp;&nbsp;联系我们</li>
+    	</ul>
+	</body>
+</html>
